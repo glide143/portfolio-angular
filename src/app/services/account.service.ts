@@ -29,6 +29,7 @@ export class AccountService {
       stock.cost = stock.price;
       this._cost = this.credit(stock.price, this.cost);
       stock.change = 0;
+      stock.dateOfPurchase = new Date();
       this._stocks.push(stock);
       this.calculateValue();
       this.cacheValues();

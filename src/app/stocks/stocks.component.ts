@@ -8,7 +8,6 @@ import { AccountService } from '../services/account.service';
 })
 export class StocksComponent {
   @Input() stocks: any;
-  total: number = 100;
 
   constructor(private accountService: AccountService) { }
 

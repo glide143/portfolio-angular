@@ -29,6 +29,8 @@ export class InvestmentComponent implements DoCheck {
   }
 
   sell(index: any): void {
+    console.log(index)
     this.accountService.sell(index);
   }
+
 }
